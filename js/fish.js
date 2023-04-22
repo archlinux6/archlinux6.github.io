@@ -84,7 +84,6 @@ var RENDERER = {
 		this.$window.on('resize', this.watchWindowSize);
 		this.$container.on('mouseenter', this.startEpicenter);
 		this.$container.on('mousemove', this.moveEpicenter);
-		this.$container.on('click', this.reverseVertical);
 	},
 	getAxis : function(event){
 		var offset = this.$container.offset();
