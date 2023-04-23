@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>主流技术的学习 | archlinux6</title><meta name="author" content="Archlinux6"><meta name="copyright" content="Archlinux6"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="主流技术的学习">
+<meta property="og:url" content="http://example.com/2023/04/23/%E4%B8%BB%E6%B5%81%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="archlinux6">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/author.jpeg">
+<meta property="article:published_time" content="2023-04-23T15:10:41.000Z">
+<meta property="article:modified_time" content="2023-04-23T15:26:49.544Z">
+<meta property="article:author" content="Archlinux6">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/author.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/04/23/%E4%B8%BB%E6%B5%81%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '主流技术的学习',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-23 23:26:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/tag.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/author.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="archlinux6"><span class="site-name">archlinux6</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">主流技术的学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-23T15:10:41.000Z" title="发表于 2023-04-23 23:10:41">2023-04-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T15:26:49.544Z" title="更新于 2023-04-23 23:26:49">2023-04-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">15</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="主流技术的学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="e2f73da722af35d46b5bbfb1fab9f93814ad30f324d3ef77c54d2f22b93cc027">4ee246642742a344a228dddb7ecad8dbe460a2d68e41673c6d9ad4f747dbd78d6d155c83128b21f477ae1500f351a1d3ad58cda7db72670dc2758c934ecba3d212abcdc61b6f3bfb40d69b3baadd377a3498ddaa25675af02c75f22df3f9626ab598b8fb0528713ba3b6c3224c29767cad380054a030e0822d486a4dc4b0c366c75bb01edc47efe08054c1514afa3664b60aea6d5e1132a8cfdd151ba693d29e4aae723254fb3936dff1000496c70fbe8696fff64d5b7fd4fd32f6fd95bcdb5a4d9810d7441dabd4ff60bc7781c95a86abfa2e33a663a63aa60d0836222fe53ebd0866c6836c11b7718b28230caae37bad6f516d4ea7c10d4753f85a18517ca88c9ae592365c0959d2ec1f9d4a79175f234467dda1bf242a0f13966353f69af3bf96c76e375bcb2411ef5f5376466898b92616c0c896a6090b486a4f7961cab5ab4158a4303cf16f0c04a23faf143dac010214d044a7b6cadf59a8a57a64c8b7028b1c3637bb5466c6716bada3368c21e0c58d63ffc39ba27eb06853e04f85d8ffbf32860bc99458645732b32cd915962c6d2cc225e7b0b27c213dbb20d1c2caec562300e32b7531abcc1b74cad458af26363b665a4c83adf2cbbd87c73623490ff7d70e5f49542f219a2ab9eb752786ddbe76d93a1ac476f3a51a3a11d826ec63a76ca1bcc4873cf6357f1d0f59e02f8cd6c3f02a0e04aa1b1097d9dc041f76a0b784e5834f630dd328272a835c3010fd51d9d7002f8ebfc9ea529123033355d38575f8820ddec250ea2ac6dba5dea1eb4fe73c85ce31bdd8081881a787e27490260ec9b5f05e30e6633a28f0f8972f15fccac1a4633f68c6d1265ee15eba5a052825d4520e6961894989cd53ec017c62a5a74ef640d8f33907fd7eb11046b4aba596f71ba851284e161812985956974d194042cfc3cecdfb5b2d9b2776fd999331ee41c4b3bed711a186e679be42c52987df106c5d1b70676923b885aab3688b5275f76c0ab8716ca4c03c3556a97b0c4c580b2780682a78e03f18e7882854935e27cca891b9a2a92f87bd60473aad162f7fa2c437a12b5747ae29c64c9ed5b4c739ffa26a5af32df25eb62da57508132ddc096663188e9039be7524d1dba9ba5e3421fbef7b63381db9b212c87c8354d92e62072a184907cd474ee09f8714de6731d0c10c097919bff6bdf3e748e88c0392c066311eececfedb28172f4635f925d9c04c47fc69dc2e55dddca34c329e480fc65a1eb99bcef27f75d067409860249e9dda4d8026dca7ccb77ca2547665b073ab3143acf5698e7dcbbe9033898b4aed043c0211059d9d096653f0944e1614dd0fe8f4ea26dd819b5b31597699f47cbce432f4d7fd268e5cc37c67f49442642da3fdf991f1039f214203e4466fb4a681cf0e87a8b26cfa9046c0945eb4c8a5244e7959151f344abeb07bd1c20835960269f0a448c9c1ae4c731758a3c4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">这篇文章已加密，请输入浏览密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Archlinux6</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/04/23/%E4%B8%BB%E6%B5%81%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0/">http://example.com/2023/04/23/%E4%B8%BB%E6%B5%81%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0/</a></span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=null" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/04/17/%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2sql%E4%B9%A0%E9%A2%982/" title="数据查询sql习题综合二"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据查询sql习题综合二</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/author.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Archlinux6</div><div class="author-info__description">希望我的分享能帮助到大家</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/archlinux6"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"><div class="twopeople"><div class="container" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width:200px;max-height:200px;touch-action:none;width:640px;height:640px;"></canvas></div><script src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople1.js"></script><script src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/zdog.dist.js"></script><script id="rendered-js" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople.js"></script><style>.twopeople{margin:0;align-items:center;justify-content:center;text-align:center;}canvas{display:block;margin:0 auto;cursor:move;}</style></div><div class="twopeople"></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">1.云服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-VUE"><span class="toc-number">2.</span> <span class="toc-text">2.VUE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-YAML"><span class="toc-number">3.</span> <span class="toc-text">3.YAML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-DOCKER"><span class="toc-number">4.</span> <span class="toc-text">4.DOCKER</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/23/%E4%B8%BB%E6%B5%81%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0/" title="主流技术的学习">主流技术的学习</a><time datetime="2023-04-23T15:10:41.000Z" title="发表于 2023-04-23 23:10:41">2023-04-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/17/%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2sql%E4%B9%A0%E9%A2%982/" title="数据查询sql习题综合二">数据查询sql习题综合二</a><time datetime="2023-04-17T11:30:59.000Z" title="发表于 2023-04-17 19:30:59">2023-04-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/16/%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2sql%E4%B9%A0%E9%A2%981/" title="数据查询sql习题综合一">数据查询sql习题综合一</a><time datetime="2023-04-16T11:23:46.000Z" title="发表于 2023-04-16 19:23:46">2023-04-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/14/%E7%BB%84%E5%90%88%E5%92%8C%E7%BB%A7%E6%89%BFJAVA%E4%B9%A0%E9%A2%98/" title="组合和继承JAVA习题">组合和继承JAVA习题</a><time datetime="2023-04-14T15:01:44.000Z" title="发表于 2023-04-14 23:01:44">2023-04-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/13/%E6%95%B0%E7%BB%84JAVA%E4%B9%A0%E9%A2%98/" title="数组JAVA习题">数组JAVA习题</a><time datetime="2023-04-13T15:30:22.000Z" title="发表于 2023-04-13 23:30:22">2023-04-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div class="container" id="jsi-flying-fish-container"><script src="/js/fish.js"></script></div><style>   @media only screen and (max-width: 767px){
+   #sidebar_search_box input[type=text]{width:calc(100% - 24px)}
+}</style></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><script src="/js/fish.js"></script><script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script><script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script><script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script><script type="text/javascript" src="\js\snow.js"></script><script type="text/javascript" src="\js\daovoice.js"></script><script src="https://cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script><div class="aplayer no-destroy" data-id="8375322691" data-server="netease" data-fixed="true" data-type="playlist" data-autoplay="true" data-lrcType="-1"> </div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="20px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
