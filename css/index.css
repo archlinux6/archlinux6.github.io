@@ -322,7 +322,7 @@ hr:before,
   left: 0;
   width: 0.43em;
   height: 0.43em;
-  border: 0.215em solid #f66;
+  border: 0.215em solid #ffc0cb;
   border-radius: 0.43em;
   background: transparent;
   content: '';
@@ -1352,8 +1352,8 @@ canvas:not(#ribbon-canvas),
   --sidebar-bg: #f6f8fa;
   --btn-hover-color: #ff7242;
   --btn-color: #fff;
-  --btn-bg: #f66;
-  --text-bg-hover: rgba(255,102,102,0.7);
+  --btn-bg: #ffc0cb;
+  --text-bg-hover: rgba(255,192,203,0.7);
   --light-grey: #eee;
   --dark-grey: #cacaca;
   --white: #fff;
@@ -1367,7 +1367,7 @@ canvas:not(#ribbon-canvas),
   --pseudo-hover: #ff7242;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
-  --default-bg-color: #f66;
+  --default-bg-color: #ffc0cb;
 }
 body {
   position: relative;
@@ -1499,7 +1499,7 @@ a {
   overflow-wrap: break-word;
 }
 a:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 .is-center {
   text-align: center;
@@ -1790,7 +1790,7 @@ figure.highlight pre .javascript .function {
   transition: color 0.2s;
 }
 #article-container .highlight-tools .copy-button:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #article-container .gutter {
   -webkit-user-select: none;
@@ -1917,7 +1917,7 @@ figure.highlight pre .javascript .function {
 .article-sort {
   margin-left: 10px;
   padding-left: 20px;
-  border-left: 2px solid #fcc;
+  border-left: 2px solid #fff;
 }
 .article-sort-title {
   position: relative;
@@ -1936,7 +1936,7 @@ figure.highlight pre .javascript .function {
   z-index: 1;
   width: 10px;
   height: 10px;
-  border: 5px solid #f66;
+  border: 5px solid #ffc0cb;
   border-radius: 10px;
   background: var(--card-bg);
   content: '';
@@ -1954,7 +1954,7 @@ figure.highlight pre .javascript .function {
   z-index: 0;
   width: 2px;
   height: 1.5em;
-  background: #fcc;
+  background: #fff;
   content: '';
 }
 .article-sort-item {
@@ -1986,7 +1986,7 @@ figure.highlight pre .javascript .function {
   left: calc(-20px - 17px);
   width: 6px;
   height: 6px;
-  border: 3px solid #f66;
+  border: 3px solid #ffc0cb;
   border-radius: 6px;
   background: var(--card-bg);
   content: '';
@@ -2006,7 +2006,7 @@ figure.highlight pre .javascript .function {
   font-size: 1.43em;
 }
 .article-sort-item.year:hover:before {
-  border-color: #f66;
+  border-color: #ffc0cb;
 }
 .article-sort-item.year:before {
   border-color: var(--pseudo-hover);
@@ -2030,7 +2030,7 @@ figure.highlight pre .javascript .function {
   -webkit-line-clamp: 2;
 }
 .article-sort-item-title:hover {
-  color: #f66;
+  color: #ffc0cb;
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
   -o-transform: translateX(10px);
@@ -2067,7 +2067,7 @@ figure.highlight pre .javascript .function {
   color: var(--font-color);
 }
 .category-lists .category-list a:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 .category-lists .category-list .category-list-count {
   margin-left: 8px;
@@ -2410,7 +2410,7 @@ figure.highlight pre .javascript .function {
   }
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
   margin: 6px 0;
@@ -2442,7 +2442,7 @@ figure.highlight pre .javascript .function {
   color: #858585;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
-  color: #f66;
+  color: #ffc0cb;
   text-decoration: underline;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .content {
@@ -2458,7 +2458,7 @@ figure.highlight pre .javascript .function {
   transition: all 0.3s;
 }
 .tag-cloud-list a:hover {
-  color: #f66 !important;
+  color: #ffc0cb !important;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -2578,7 +2578,7 @@ h1.page-title + .tag-cloud-list {
   padding: 0 4px;
 }
 #aside-content .card-tag-cloud a:hover {
-  color: #f66 !important;
+  color: #ffc0cb !important;
 }
 #aside-content .aside-list > span {
   display: block;
@@ -2643,7 +2643,7 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .aside-list > .aside-list-item .content > .title:hover,
 #aside-content .aside-list > .aside-list-item .content > .comment:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #aside-content .aside-list > .aside-list-item.no-cover {
   min-height: 4.4em;
@@ -2837,7 +2837,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.2s ease-in-out;
 }
 #aside-content #card-toc .toc-content .toc-link:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #aside-content #card-toc .toc-content .toc-link.active {
   background: #00c4b6;
@@ -2900,7 +2900,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.3s;
 }
 .site-data > a:hover div {
-  color: #f66 !important;
+  color: #ffc0cb !important;
 }
 .site-data > a .headline {
   color: var(--font-color);
@@ -3235,7 +3235,7 @@ h1.page-title + .tag-cloud-list {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #f66;
+  background-color: #ffc0cb;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3398,7 +3398,7 @@ h1.page-title + .tag-cloud-list {
   color: var(--font-color);
 }
 #page-header.nav-fixed #nav #blog-info:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #page-header.nav-fixed #nav #blog-info .site-name {
   text-shadow: none;
@@ -3410,7 +3410,7 @@ h1.page-title + .tag-cloud-list {
 }
 #page-header.nav-fixed #nav a:hover,
 #page-header.nav-fixed #nav #toggle-menu:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #page-header.nav-fixed.fixed #nav {
   top: 0;
@@ -3524,7 +3524,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.3s ease-out;
 }
 #post-info #post-meta a:hover {
-  color: #f66;
+  color: #ffc0cb;
   text-decoration: underline;
 }
 #nav {
@@ -3701,7 +3701,7 @@ h1.page-title + .tag-cloud-list {
   z-index: -1;
   width: 0;
   height: 3px;
-  background-color: #ff9494;
+  background-color: #ffd3db;
   content: '';
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -4314,7 +4314,7 @@ h1.page-title + .tag-cloud-list {
 #article-container.post-content h4:hover:before,
 #article-container.post-content h5:hover:before,
 #article-container.post-content h6:hover:before {
-  color: #f66;
+  color: #ffc0cb;
 }
 #article-container.post-content h1 {
   padding-left: 32px;
@@ -4381,7 +4381,7 @@ h1.page-title + .tag-cloud-list {
   margin: 0 0 8px;
 }
 #article-container.post-content li::marker {
-  color: #f66;
+  color: #ffc0cb;
   font-weight: 600;
   font-size: 1.05em;
 }
@@ -4404,9 +4404,9 @@ h1.page-title + .tag-cloud-list {
   margin: 8px 8px 8px 0;
   padding: 0 12px;
   width: fit-content;
-  border: 1px solid #f66;
+  border: 1px solid #ffc0cb;
   border-radius: 12px;
-  color: #f66;
+  color: #ffc0cb;
   font-size: 0.85em;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -4415,7 +4415,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.2s ease-in-out;
 }
 #post .tag_share .post-meta__tags:hover {
-  background: #f66;
+  background: #ffc0cb;
   color: var(--white);
 }
 #post .tag_share .post_share {
@@ -4449,7 +4449,7 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   top: 2px;
   right: 12px;
-  color: #f66;
+  color: #ffc0cb;
   content: '\f1f9';
   font-size: 1.3em;
 }
@@ -4458,7 +4458,7 @@ h1.page-title + .tag-cloud-list {
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 #post .post-copyright .post-copyright-meta {
-  color: #f66;
+  color: #ffc0cb;
   font-weight: bold;
 }
 #post .post-copyright .post-copyright-info {
@@ -4808,7 +4808,7 @@ h1.page-title + .tag-cloud-list {
 }
 #waline-wrap {
   --waline-font-size: 1.1em;
-  --waline-theme-color: #f66;
+  --waline-theme-color: #ffc0cb;
   --waline-active-color: #ff7242;
 }
 #waline-wrap .wl-comment-actions > button:not(last-child) {
@@ -5207,7 +5207,7 @@ blockquote.pullquote.right {
 .hide-block > .hide-button {
   display: inline-block;
   padding: 5px 18px;
-  background: #f66;
+  background: #ffc0cb;
   color: var(--white);
 }
 .hide-inline > .hide-button:hover,
@@ -5667,7 +5667,7 @@ blockquote.pullquote.right {
   width: 1.5em;
 }
 #article-container .tabs > .nav-tabs > .tab.active button {
-  border-top: 2px solid #f66;
+  border-top: 2px solid #ffc0cb;
   background: var(--tab-button-active-bg);
   cursor: default;
 }
@@ -5766,7 +5766,7 @@ blockquote.pullquote.right {
 #article-container .timeline {
   margin: 0 0 20px 10px;
   padding: 14px 20px 5px;
-  border-left: 2px solid var(--timeline-color, #f66);
+  border-left: 2px solid var(--timeline-color, #ffc0cb);
 }
 #article-container .timeline.blue {
   --timeline-color: #428bca;
@@ -5796,7 +5796,7 @@ blockquote.pullquote.right {
   margin: 0 0 15px;
 }
 #article-container .timeline .timeline-item:hover .item-circle:before {
-  border-color: var(--timeline-color, #f66);
+  border-color: var(--timeline-color, #ffc0cb);
 }
 #article-container .timeline .timeline-item.headline .timeline-item-title .item-circle > p {
   font-weight: 600;
@@ -5804,7 +5804,7 @@ blockquote.pullquote.right {
 }
 #article-container .timeline .timeline-item.headline .timeline-item-title .item-circle:before {
   left: -28px;
-  border: 4px solid var(--timeline-color, #f66);
+  border: 4px solid var(--timeline-color, #ffc0cb);
 }
 #article-container .timeline .timeline-item.headline:hover .item-circle:before {
   border-color: var(--pseudo-hover);
@@ -5841,7 +5841,7 @@ blockquote.pullquote.right {
   position: relative;
   padding: 12px 15px;
   border-radius: 8px;
-  background: var(--timeline-bg, #ffe8e8);
+  background: var(--timeline-bg, #fff6f7);
   font-size: 0.93em;
 }
 #article-container .timeline .timeline-item .timeline-item-content > :last-child {
@@ -6236,7 +6236,7 @@ blockquote.pullquote.right {
 }
 .search-dialog .search-nav {
   margin: 0 0 14px;
-  color: #f66;
+  color: #ffc0cb;
   font-size: 1.4em;
   line-height: 1;
 }
@@ -6253,7 +6253,7 @@ blockquote.pullquote.right {
   transition: color 0.2s ease-in-out;
 }
 .search-dialog .search-nav .search-close-button:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #search-mask {
   position: fixed;
@@ -6274,7 +6274,7 @@ blockquote.pullquote.right {
   padding: 5px 14px;
   width: 100%;
   outline: none;
-  border: 2px solid #f66;
+  border: 2px solid #ffc0cb;
   border-radius: 40px;
   background: var(--search-bg);
   color: var(--search-input-color);
@@ -6297,7 +6297,7 @@ blockquote.pullquote.right {
   left: 0;
   width: 0.5em;
   height: 0.5em;
-  border: 3px solid #f66;
+  border: 3px solid #ffc0cb;
   border-radius: 0.5em;
   background: transparent;
   content: '';
@@ -6313,7 +6313,7 @@ blockquote.pullquote.right {
   color: var(--search-a-color);
 }
 #local-search .search-dialog .local-search-hit-item a:hover {
-  color: #f66;
+  color: #ffc0cb;
 }
 #local-search .search-dialog .local-search-hit-item .search-result-title {
   font-weight: 600;
