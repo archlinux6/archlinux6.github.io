@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/09/23/机器学习/"/>
+  <link rel="canonical" href="http://example.com/2023/11/10/高数笔记/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>机器学习 - archlinux6</title>
+  <title>高数笔记 - archlinux6</title>
   <meta name="keywords" content="null">
-  <meta desc name="description" content="机器学习笔记 - John Doe - archlinux6">
+  <meta desc name="description" content="高数笔记 - John Doe - archlinux6">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习">
-<meta property="og:url" content="http://example.com/2023/09/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="高数笔记">
+<meta property="og:url" content="http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="archlinux6">
-<meta property="og:description" content="机器学习笔记">
+<meta property="og:description" content="高数笔记">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-09-23T08:15:41.000Z">
-<meta property="article:modified_time" content="2023-09-24T13:09:04.972Z">
+<meta property="article:published_time" content="2023-11-10T12:07:35.000Z">
+<meta property="article:modified_time" content="2023-11-11T15:25:06.350Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2641,7 +2641,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/23/机器学习/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/10/高数笔记/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="archlinux6">
   </span>
@@ -2662,7 +2662,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        机器学习
+        高数笔记
       </h1>
       <div class='new-meta-box'>
         
@@ -2683,10 +2683,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-23T16:15:41+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-11-10T20:07:35+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Sep 23, 2023</p>
+    <p>发布于：Nov 10, 2023</p>
   </a>
 </div>
 
@@ -2702,33 +2702,66 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>机器学习笔记</p>
+    <p>高数笔记</p>
 <span id="more"></span>
+<h3 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h3><ul>
+<li>极限四则运算法则<img src="img/../../../img/极限加法运算.png" class="lazyload" data-srcset="img/../../../img/极限加法运算.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+<br></li>
+</ul>
+<h3 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h3><pre><code>数列极限存在 需要用 单调有界定理 
+先证明其单调性，对于任意的n, 有 Xn &gt;= Xn+1 或者 Xn &lt;= Xn+1
+证明其有界性，对于任意的n, 有 m &lt; Xn &lt; M 
 
-<h1 id="py"><a href="#py" class="headerlink" title="py"></a>py</h1><p>1.注意<br>和js一样不用加分号<br>不用加变量定义<br>不用加数据类型</p>
-<p>2.定义一个函数</p>
-<pre><code>def 函数名（参数列表）:
-    函数体 
+常用第一数学归纳法证明，证明X1对于命题成立，再假设Xk成立，
+证明Xk+1成立，则命题对于一切的n成立。
+- 证明其单调性，对于任意的n, 有 Xn &gt;= Xn+1 或者 Xn &lt;= Xn+1
+  可以先证明 X1 &gt;= X2 或者  X1 &lt;= X2
+  假设Xk &gt;= Xk+1 或者  Xk &lt;= Xk+1
+  借助假设条件
+  证明Xk+1 &gt;= Xk+2  或者 Xk+1 &lt;= Xk+2
+
+- 证明其有界性，对于任意的n, 有 m &lt; Xn &lt; M 
+  证完单调性再证有界性只需证明有上界或有下界
+  用数学归纳法证明
+  证明X1 &gt;= m 或者 X1 &lt;= M
+  假设Xk &gt;= m 或者 Xk &lt;= M
+  证明Xk+1 &gt;= m 或者 Xk+1 &lt;= M
+
+
+注意，结合图像记忆 y1 = sinx , y2 = x
+当x &lt; 0, sinx &gt; x
+当x = 0, sinx = x
+当x &gt; 0, sinx &lt; x
+
+当0 &lt;= x &lt;= 1, 0 &lt;= sinx &lt;= x &lt;= 1
+
+综上
+证明数列单调减且有下界
+证明数列单调增且有上界
 </code></pre>
-<p>3.if用法</p>
-<pre><code>if 判断条件：
-    执行语句……
-else：
-    执行语句……
-</code></pre>
-<p>4.print</p>
-<pre><code>print()打印
-</code></pre>
-<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p>import 导入，进口，几个package, as 后跟着别名<br>1.numpy 用来实现向量，矩阵计算<br>2.padas 用来导入csv文件</p>
-<pre><code>padas.read_csv(&#39;./文件名.csv&#39;) 或者 padas.read_csv(&#39;文件名.csv&#39;) 
-</code></pre>
-<p>文件名.csv和当前程序放在一起<br>3.matplotlib 用来实现数据可视化 plt是别名<br>plt.scatter(x,y) 散播图<br>plt.show() 放出图</p>
-<p>4.sklearn 里有数据集 dataset </p>
-<pre><code>from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn import linear_model
-</code></pre>
-<p>5.数据集分为训练集和测试集，一条数据分为特征值和目标值<br>6.任务分回归和分类，根据目标值是连续值还是离散值来判断<br>7.第一个机器学习算法是线性回归算法</p>
+<h3 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h3><p>  导数 导函数<br>  函数某点的导数是 与自变量对应的因变量的值 比上 自变量变化了很小的值  的值<br>  可以理解成是它的斜率，k &#x3D; tanx &#x3D; 对边 比上 邻边, 也可以理解成某点的瞬时速度<br>  注意某点可导隐含着连续<br> <br></p>
+<h4 id="导数定义"><a href="#导数定义" class="headerlink" title="导数定义"></a>导数定义</h4><img src="img/../../../img/导数定义.png" class="lazyload" data-srcset="img/../../../img/导数定义.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+<br>
+<img src="img/../../../img/导数定义2.png" class="lazyload" data-srcset="img/../../../img/导数定义2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+注意其三个不同形式的公式
+
+<br>
+
+
+<ul>
+<li>dertax的任意性<img src="img/../../../img/dertax的任意性.png" class="lazyload" data-srcset="img/../../../img/dertax的任意性.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+只要dertax和另一个变形都是趋于0的即可</li>
+</ul>
+<h4 id="绝对值函数在零点可导的充要条件"><a href="#绝对值函数在零点可导的充要条件" class="headerlink" title="绝对值函数在零点可导的充要条件"></a>绝对值函数在零点可导的充要条件</h4><ul>
+<li>|f(x)| 是绝对值函数, 绝对值是连续的，连续不一定可导</li>
+<li>零点（zero point）对于函数y&#x3D;f(x)，使f(x)&#x3D;0的实数x叫做函数y&#x3D;f(x)的零点，即零点不是点。<br>函数y&#x3D;f(x)的零点就是方程f(x)&#x3D;0的实数根，也就是函数y&#x3D;f(x)的图象与x轴的交点的横坐标。<br>一句话，令f(x)&#x3D;0的x即是零点<br>
+<img src="img/../../../img/绝对值函数零点可导的证明.png" class="lazyload" data-srcset="img/../../../img/绝对值函数零点可导的证明.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" /></li>
+</ul>
+<h4 id="含绝对值的两函数之积在绝对值零点可导的充要条件"><a href="#含绝对值的两函数之积在绝对值零点可导的充要条件" class="headerlink" title="含绝对值的两函数之积在绝对值零点可导的充要条件"></a>含绝对值的两函数之积在绝对值零点可导的充要条件</h4><br>
+<img src="img/../../../img/含绝对值的两函数之积在绝对值零点可导的充要条件.png" class="lazyload" data-srcset="img/../../../img/含绝对值的两函数之积在绝对值零点可导的充要条件.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+<br>
+连续函数（continuous function）处处连续，每点的极限值等于函数值
+
 
 
   </div>
@@ -2754,10 +2787,10 @@ from sklearn import linear_model
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-24T21:09:04+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-11T23:25:06+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>本页文档最后更新于：Sep 24, 2023</p>
+    <p>本页文档最后更新于：Nov 11, 2023</p>
   </a>
 </div>
 
@@ -2776,7 +2809,7 @@ from sklearn import linear_model
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/09/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/&title=机器学习 - archlinux6&summary=机器学习笔记"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/&title=高数笔记 - archlinux6&summary=高数笔记"
           
           >
           
@@ -2788,7 +2821,7 @@ from sklearn import linear_model
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/09/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/&title=机器学习 - archlinux6&summary=机器学习笔记"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/&title=高数笔记 - archlinux6&summary=高数笔记"
           
           >
           
@@ -2800,7 +2833,7 @@ from sklearn import linear_model
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/09/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/&title=机器学习 - archlinux6&summary=机器学习笔记"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/&title=高数笔记 - archlinux6&summary=高数笔记"
           
           >
           
@@ -2833,16 +2866,25 @@ from sklearn import linear_model
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/10/01/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>算法笔记</p>
-          <p class='content'>算法学习笔记
-
-C++笔记1. C++ 语言源文件扩展名为  .cpp
-2. #include &lt;cstdio&gt; 等价于 #include &lt;stdio.h&gt;
-
-3.	\...</p>
-        </a>
       
+        <a class='next' href='/2023/11/10/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/'>
+          <p class='title'>线性代数<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>线性代数学习笔记
+
+1.线性方程组Ax=0 齐次线性方程组
+Ax=b 非齐次线性方程组
+
+[A]是系数矩阵，[A|b]是增广矩阵
+
+
+
+
+
+
+向量形式是矩阵A的列向量组和向量的乘积。
+
+对增广矩...</p>
+        </a>
       
     </div>
   
@@ -2882,7 +2924,7 @@ C++笔记1. C++ 语言源文件扩展名为  .cpp
 
 
     <div class='content'>
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%81%E9%99%90"><span class="toc-number">1.</span> <span class="toc-text">极限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90"><span class="toc-number">2.</span> <span class="toc-text">数列极限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">导数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0%E5%AE%9A%E4%B9%89"><span class="toc-number">3.1.</span> <span class="toc-text">导数定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%87%BD%E6%95%B0%E5%9C%A8%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">3.2.</span> <span class="toc-text">绝对值函数在零点可导的充要条件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AB%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%9A%84%E4%B8%A4%E5%87%BD%E6%95%B0%E4%B9%8B%E7%A7%AF%E5%9C%A8%E7%BB%9D%E5%AF%B9%E5%80%BC%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">3.3.</span> <span class="toc-text">含绝对值的两函数之积在绝对值零点可导的充要条件</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -4328,7 +4370,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"学习笔记"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"archlinux6"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/23/机器学习/","name":"机器学习"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"archlinux6","url":"http://example.com/","keywords":null,"description":"学习笔记","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"学习笔记"},"publisher":{"@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"机器学习","description":"机器学习笔记","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"archlinux6","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/","wordCount":6,"datePublished":"2023-09-23T08:15:41.000Z","dateModified":"2023-09-24T13:09:04.972Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"学习笔记"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"archlinux6"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/11/10/高数笔记/","name":"高数笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"archlinux6","url":"http://example.com/","keywords":null,"description":"学习笔记","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"学习笔记"},"publisher":{"@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"高数笔记","description":"高数笔记","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"archlinux6","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/","wordCount":4,"datePublished":"2023-11-10T12:07:35.000Z","dateModified":"2023-11-11T15:25:06.350Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
