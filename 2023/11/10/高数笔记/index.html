@@ -45,7 +45,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-11-10T12:07:35.000Z">
-<meta property="article:modified_time" content="2023-11-11T15:25:06.350Z">
+<meta property="article:modified_time" content="2023-11-15T08:29:43.947Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1976,7 +1976,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1699716409848),
+    lastupdate: new Date(1700037731939),
     sidebar: {
       for_page: ["qgroup","post","category","guide"],
       for_post: ["toc"],
@@ -2704,11 +2704,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="post-body" itemprop="articleBody">
     <p>高数笔记</p>
 <span id="more"></span>
-<h3 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h3><ul>
-<li>极限四则运算法则<img src="img/../../../img/极限加法运算.png" class="lazyload" data-srcset="img/../../../img/极限加法运算.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
-<br></li>
+<h3 id="做题技巧"><a href="#做题技巧" class="headerlink" title="做题技巧"></a>做题技巧</h3><ul>
+<li><p>x^n  n趋向无穷时，得看x的取值范围<br>当x&gt;&#x3D;1时，x^n趋向无穷，<br>当0&lt;&#x3D;x&lt;&#x3D;1时，x^n趋向0</p>
+</li>
+<li><p>25&#x2F;25&#x2F;5<br>不能看成 25&#x2F;5 &#x3D; 5<br>而是1&#x2F;5</p>
+</li>
+<li><p>命题组经常默认 n为自然数，如果没有定义，默认自然数。</p>
+</li>
+<li><p>一阶递推式</p>
+</li>
+<li><p>二阶递推式</p>
+</li>
+<li><p>二项式定理</p>
+</li>
+<li><p>n次方差公式</p>
+</li>
 </ul>
-<h3 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h3><pre><code>数列极限存在 需要用 单调有界定理 
+<div class="story post-story"><h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><h3 id="函数极限"><a href="#函数极限" class="headerlink" title="函数极限"></a>函数极限</h3><p>等阶无穷小是特殊的同阶无穷小<br>小o 表示 高阶无穷小<br>大O 表示 同阶，同数量级</p>
+<h4 id="极限四则运算法则"><a href="#极限四则运算法则" class="headerlink" title="极限四则运算法则"></a>极限四则运算法则</h4><img src="img/../../../img/极限加法运算.png" class="lazyload" data-srcset="img/../../../img/极限加法运算.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+<br>
+注意要极限存在的前提
+
+<h4 id="洛必达法则"><a href="#洛必达法则" class="headerlink" title="洛必达法则"></a>洛必达法则</h4><img src="img/../../../img/洛必达法则.png" class="lazyload" data-srcset="img/../../../img/洛必达法则.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+<br>
+注意洛必达使用的第二点条件
+<br>
+<img
+src="img/../../../img/洛必达法则的应用不会的题.png" width="50%" />
+<br>
+
+<h4 id="lim-0-极限存放的情况"><a href="#lim-0-极限存放的情况" class="headerlink" title="lim ?&#x2F;0 极限存放的情况"></a>lim ?&#x2F;0 极限存放的情况</h4><img src="img/../../../img/分母为0极限存在情况.png" class="lazyload" data-srcset="img/../../../img/分母为0极限存在情况.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+
+<p>错题，错误地对分子使用洛必达，求f(1) &#x3D; -2的导数为0，分母为1，结果为0<br>结果应该为f’(x) 最后再把1带进去，把f(x)看成含有x的表达式<br><img src="img/../../../img/分母为0极限存在情况错题.png" class="lazyload" data-srcset="img/../../../img/分母为0极限存在情况错题.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" /></p>
+<h4 id="利用函数周期性解决问题"><a href="#利用函数周期性解决问题" class="headerlink" title="利用函数周期性解决问题"></a>利用函数周期性解决问题</h4><p>sinx 是周期函数<br>结合图像来理解<br><img src="img/../../../img/sinx图像.png" class="lazyload" data-srcset="img/../../../img/sinx图像.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" /><br> sin(2n派 + x) &#x3D; sin x<br>sin(n派 + x) &#x3D; (-1)^n * sinx<br><img src="img/../../../img/sinx性质.png" class="lazyload" data-srcset="img/../../../img/sinx性质.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" /><br>目前还没理解为什么不能用这种方法，<br>可能是由于极限四则运算前提条件 极限存在不成立<br><img src="img/../../../img/sinx性质错题.png" class="lazyload" data-srcset="img/../../../img/sinx性质错题.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" /></p>
+<h3 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h3><h4 id="数列极限存在证明"><a href="#数列极限存在证明" class="headerlink" title="数列极限存在证明"></a>数列极限存在证明</h4><pre><code>数列极限存在 需要用 单调有界定理 
 先证明其单调性，对于任意的n, 有 Xn &gt;= Xn+1 或者 Xn &lt;= Xn+1
 证明其有界性，对于任意的n, 有 m &lt; Xn &lt; M 
 
@@ -2739,31 +2768,67 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 证明数列单调减且有下界
 证明数列单调增且有上界
 </code></pre>
-<h3 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h3><p>  导数 导函数<br>  函数某点的导数是 与自变量对应的因变量的值 比上 自变量变化了很小的值  的值<br>  可以理解成是它的斜率，k &#x3D; tanx &#x3D; 对边 比上 邻边, 也可以理解成某点的瞬时速度<br>  注意某点可导隐含着连续<br> <br></p>
-<h4 id="导数定义"><a href="#导数定义" class="headerlink" title="导数定义"></a>导数定义</h4><img src="img/../../../img/导数定义.png" class="lazyload" data-srcset="img/../../../img/导数定义.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+<h3 id="连续-间断"><a href="#连续-间断" class="headerlink" title="连续 间断"></a>连续 间断</h3><h4 id="连续函数"><a href="#连续函数" class="headerlink" title="连续函数"></a>连续函数</h4><p>连续函数（continuous function）上处处连续，每点的极限值等于函数值</p>
+<p>连续函数的复合函数依旧是连续函数。<br>连续函数运算法则，连续函数的四则运算结果为连续函数</p>
+<p>举反例常用：狄利克雷函数 </p>
+<ul>
+<li>处处不连续</li>
+<li>无法画出函数图像，但是它的函数图像客观存在</li>
+</ul>
+<img src="img/../../../img/狄利克雷函数.png" class="lazyload" data-srcset="img/../../../img/狄利克雷函数.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+
+<h4 id="分段函数的间断点"><a href="#分段函数的间断点" class="headerlink" title="分段函数的间断点"></a>分段函数的间断点</h4><p>分段函数的间断点：除了每一段函数的间断点，另外检验分界点，可能出现：</p>
+<ul>
+<li><p>分界点极限不相等；</p>
+</li>
+<li><p>分界点的值无定义；</p>
+</li>
+<li><p>分界点的值有定义但不等于左、右极限。</p>
+</li>
+</ul>
+</div><div class="story post-story"><h2 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h2><p>  导数 导函数<br>  函数某点的导数是 与自变量对应的因变量的值 比上 自变量变化了很小的值  的值<br>  可以理解成是它的斜率，k &#x3D; tanx &#x3D; 对边 比上 邻边, 也可以理解成某点的瞬时速度<br>  注意某点可导隐含着连续<br> <br></p>
+<h3 id="导数定义"><a href="#导数定义" class="headerlink" title="导数定义"></a>导数定义</h3><img src="img/../../../img/导数定义.png" class="lazyload" data-srcset="img/../../../img/导数定义.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
 <br>
 <img src="img/../../../img/导数定义2.png" class="lazyload" data-srcset="img/../../../img/导数定义2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
-注意其三个不同形式的公式
+<br>
+<img src="img/../../../img/导数定义3.png" class="lazyload" data-srcset="img/../../../img/导数定义3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
 
 <br>
+注意其三个不同形式的公式
+
+
 
 
 <ul>
 <li>dertax的任意性<img src="img/../../../img/dertax的任意性.png" class="lazyload" data-srcset="img/../../../img/dertax的任意性.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
 只要dertax和另一个变形都是趋于0的即可</li>
 </ul>
-<h4 id="绝对值函数在零点可导的充要条件"><a href="#绝对值函数在零点可导的充要条件" class="headerlink" title="绝对值函数在零点可导的充要条件"></a>绝对值函数在零点可导的充要条件</h4><ul>
-<li>|f(x)| 是绝对值函数, 绝对值是连续的，连续不一定可导</li>
-<li>零点（zero point）对于函数y&#x3D;f(x)，使f(x)&#x3D;0的实数x叫做函数y&#x3D;f(x)的零点，即零点不是点。<br>函数y&#x3D;f(x)的零点就是方程f(x)&#x3D;0的实数根，也就是函数y&#x3D;f(x)的图象与x轴的交点的横坐标。<br>一句话，令f(x)&#x3D;0的x即是零点<br>
+<h3 id="导数四则运算"><a href="#导数四则运算" class="headerlink" title="导数四则运算"></a>导数四则运算</h3><img src="img/../../../img/导数的四则运算.png" class="lazyload" data-srcset="img/../../../img/导数的四则运算.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
+<br>
+除法可以看做乘法去算，注意第五点，容易少计算分子的v',根据复合函数求导链式法则
+
+
+<h3 id="参数方程的二阶导"><a href="#参数方程的二阶导" class="headerlink" title="参数方程的二阶导"></a>参数方程的二阶导</h3><img src="img/../../../img/参数式的二阶导数.png" class="lazyload" data-srcset="img/../../../img/参数式的二阶导数.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%"  />
+<br>
+求某点的一阶导，二阶导，先把导数求出来，最后再把某点代进去算。
+
+<h3 id="隐函数求导"><a href="#隐函数求导" class="headerlink" title="隐函数求导"></a>隐函数求导</h3><p>y &#x3D; 2x 是显函数<br>2x - y &#x3D; 0 是隐函数<br>不能直接看出由x表示出来的y的函数是隐函数<br>求导方法：<br>方程两边同时对x求导，y看成x的复合函数<br>注意 (y^2)’ &#x3D; 2y * y’</p>
+<h3 id="绝对值函数在零点可导的充要条件"><a href="#绝对值函数在零点可导的充要条件" class="headerlink" title="绝对值函数在零点可导的充要条件"></a>绝对值函数在零点可导的充要条件</h3><ul>
+<li><p>绝对值函数|x|可以用来证明连续不一定可导</p>
+</li>
+<li><p>|f(x)| 是绝对值函数, 绝对值是连续的，连续不一定可导</p>
+</li>
+<li><p>零点（zero point）对于函数y&#x3D;f(x)，使f(x)&#x3D;0的实数x叫做函数y&#x3D;f(x)的零点，即零点不是点。<br>函数y&#x3D;f(x)的零点就是方程f(x)&#x3D;0的实数根，也就是函数y&#x3D;f(x)的图象与x轴的交点的横坐标。<br>一句话，令f(x)&#x3D;0的x即是零点</p>
+<br>
 <img src="img/../../../img/绝对值函数零点可导的证明.png" class="lazyload" data-srcset="img/../../../img/绝对值函数零点可导的证明.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" /></li>
 </ul>
-<h4 id="含绝对值的两函数之积在绝对值零点可导的充要条件"><a href="#含绝对值的两函数之积在绝对值零点可导的充要条件" class="headerlink" title="含绝对值的两函数之积在绝对值零点可导的充要条件"></a>含绝对值的两函数之积在绝对值零点可导的充要条件</h4><br>
+<h3 id="含绝对值的两函数之积在绝对值零点可导的充要条件"><a href="#含绝对值的两函数之积在绝对值零点可导的充要条件" class="headerlink" title="含绝对值的两函数之积在绝对值零点可导的充要条件"></a>含绝对值的两函数之积在绝对值零点可导的充要条件</h3><br>
 <img src="img/../../../img/含绝对值的两函数之积在绝对值零点可导的充要条件.png" class="lazyload" data-srcset="img/../../../img/含绝对值的两函数之积在绝对值零点可导的充要条件.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="50%" />
 <br>
-连续函数（continuous function）处处连续，每点的极限值等于函数值
 
+</div><div class="story post-story"><h2 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h2><h3 id="变限积分"><a href="#变限积分" class="headerlink" title="变限积分"></a>变限积分</h3><p>F(t) &#x3D; 积分号 f(t)dt</p>
 
-
+</div>
   </div>
   
   
@@ -2787,10 +2852,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-11T23:25:06+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-15T16:29:43+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>本页文档最后更新于：Nov 11, 2023</p>
+    <p>本页文档最后更新于：Nov 15, 2023</p>
   </a>
 </div>
 
@@ -2871,7 +2936,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='title'>线性代数<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>线性代数学习笔记
 
-1.线性方程组Ax=0 齐次线性方程组
+行列式克拉默法则
+
+
+
+
+
+
+
+线性方程组齐次和非齐次Ax=0 齐次线性方程组
 Ax=b 非齐次线性方程组
 
 [A]是系数矩阵，[A|b]是增广矩阵
@@ -2881,9 +2954,7 @@ Ax=b 非齐次线性方程组
 
 
 
-向量形式是矩阵A的列向量组和向量的乘积。
-
-对增广矩...</p>
+向量形式是矩...</p>
         </a>
       
     </div>
@@ -2924,7 +2995,7 @@ Ax=b 非齐次线性方程组
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%81%E9%99%90"><span class="toc-number">1.</span> <span class="toc-text">极限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90"><span class="toc-number">2.</span> <span class="toc-text">数列极限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">导数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0%E5%AE%9A%E4%B9%89"><span class="toc-number">3.1.</span> <span class="toc-text">导数定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%87%BD%E6%95%B0%E5%9C%A8%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">3.2.</span> <span class="toc-text">绝对值函数在零点可导的充要条件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AB%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%9A%84%E4%B8%A4%E5%87%BD%E6%95%B0%E4%B9%8B%E7%A7%AF%E5%9C%A8%E7%BB%9D%E5%AF%B9%E5%80%BC%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">3.3.</span> <span class="toc-text">含绝对值的两函数之积在绝对值零点可导的充要条件</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%81%9A%E9%A2%98%E6%8A%80%E5%B7%A7"><span class="toc-number">1.</span> <span class="toc-text">做题技巧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%81%E9%99%90"><span class="toc-number"></span> <span class="toc-text">极限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90"><span class="toc-number">1.</span> <span class="toc-text">函数极限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%81%E9%99%90%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="toc-number">1.1.</span> <span class="toc-text">极限四则运算法则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text">洛必达法则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lim-0-%E6%9E%81%E9%99%90%E5%AD%98%E6%94%BE%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">1.3.</span> <span class="toc-text">lim ?&#x2F;0 极限存放的情况</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E5%87%BD%E6%95%B0%E5%91%A8%E6%9C%9F%E6%80%A7%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="toc-number">1.4.</span> <span class="toc-text">利用函数周期性解决问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90"><span class="toc-number">2.</span> <span class="toc-text">数列极限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E8%AF%81%E6%98%8E"><span class="toc-number">2.1.</span> <span class="toc-text">数列极限存在证明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD-%E9%97%B4%E6%96%AD"><span class="toc-number">3.</span> <span class="toc-text">连续 间断</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0"><span class="toc-number">3.1.</span> <span class="toc-text">连续函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0%E7%9A%84%E9%97%B4%E6%96%AD%E7%82%B9"><span class="toc-number">3.2.</span> <span class="toc-text">分段函数的间断点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0"><span class="toc-number"></span> <span class="toc-text">导数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0%E5%AE%9A%E4%B9%89"><span class="toc-number">1.</span> <span class="toc-text">导数定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97"><span class="toc-number">2.</span> <span class="toc-text">导数四则运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BA%8C%E9%98%B6%E5%AF%BC"><span class="toc-number">3.</span> <span class="toc-text">参数方程的二阶导</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC"><span class="toc-number">4.</span> <span class="toc-text">隐函数求导</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%87%BD%E6%95%B0%E5%9C%A8%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">5.</span> <span class="toc-text">绝对值函数在零点可导的充要条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AB%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%9A%84%E4%B8%A4%E5%87%BD%E6%95%B0%E4%B9%8B%E7%A7%AF%E5%9C%A8%E7%BB%9D%E5%AF%B9%E5%80%BC%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">6.</span> <span class="toc-text">含绝对值的两函数之积在绝对值零点可导的充要条件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%AF%E5%88%86"><span class="toc-number"></span> <span class="toc-text">积分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%99%90%E7%A7%AF%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">变限积分</span></a></li></ol>
     </div>
   </section>
 
@@ -4051,7 +4122,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/003.webp"];
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/005.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4370,7 +4441,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"学习笔记"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"archlinux6"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/11/10/高数笔记/","name":"高数笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"archlinux6","url":"http://example.com/","keywords":null,"description":"学习笔记","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"学习笔记"},"publisher":{"@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"高数笔记","description":"高数笔记","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"archlinux6","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/","wordCount":4,"datePublished":"2023-11-10T12:07:35.000Z","dateModified":"2023-11-11T15:25:06.350Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"学习笔记"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"archlinux6"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/11/10/高数笔记/","name":"高数笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"archlinux6","url":"http://example.com/","keywords":null,"description":"学习笔记","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"学习笔记"},"publisher":{"@type":"Organization","name":"archlinux6","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"高数笔记","description":"高数笔记","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"archlinux6","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/11/10/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/","wordCount":4,"datePublished":"2023-11-10T12:07:35.000Z","dateModified":"2023-11-15T08:29:43.947Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
